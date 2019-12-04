@@ -1,0 +1,183 @@
+<!-- <section class="slideshow">
+  <div class="slideshow-wrap">
+    <div class="slidefade">
+      <img src="https://picsum.photos/id/1044/1280/480?grayscale" alt="slide one">
+      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="slidefade">
+      <img src="https://picsum.photos/id/103/1280/480?grayscale" alt="slide two">
+      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="slidefade">
+      <img src="https://picsum.photos/id/1011/1280/480?grayscale" alt="slide three">
+      <p class="caption">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="slidefade">
+    </div> -->
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta https-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>eg_boiler</title>
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+
+    	integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="topnav" id="main-nav">
+      <a href="#" class="nav-links"><i class="fas fa-home"></i>Home</a>
+      <a href="#" class="nav-links"><i class="fas fa-upload"></i>Upload</a>
+      <a href="#" class="nav-links"><i class="fas fa-info"></i>Info</a>
+      <a href="#" class="nav-links"><i class="fas fa-quote-right"></i>Credits</a>
+      <a href="#" class="nav-links"><i class="fas fa-share"></i>Share</a>
+      <a href="javascript:void(0);" class="nav-link trigram" onclick="navToggle()">&#9776;</a>
+    </nav>
+    <section class="slideshow">
+      <div class="slide">
+        <img src="https://picsum.photos/id/1044/1280/480?grayscale">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/103/1280/480?grayscale">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1083/1280/480?grayscale">
+      </div>
+
+      <div class="slide">
+        <img src="https://picsum.photos/id/1006/1280/480?grayscale">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor dot" src="https://picsum.photos/id/1044/1280/480?grayscale" style="width:100%" onclick="currentSlide(1)" alt="slide one">
+        </div>
+        <div class="column">
+          <img class="demo cursor dot" src="https://picsum.photos/id/103/1280/480?grayscale" style="width:100%" onclick="currentSlide(2)" alt="slide one">
+        </div>
+        <div class="column">
+          <img class="demo cursor dot" src="https://picsum.photos/id/1083/1280/480?grayscale" style="width:100%" onclick="currentSlide(3)" alt="slide one">
+        </div>
+        <div class="column">
+          <img class="demo cursor dot" src="https://picsum.photos/id/1006/1280/480?grayscale" style="width:100%" onclick="currentSlide(4)" alt="slide one">
+        </div>
+      </div>
+
+
+    </section>
+    <article class="grid-container">
+      <div class="card one">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Sleepy Pug</h3>
+          <p>This sleepy pug is so cozy on a cold Potsdam day.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card two">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Lioness</h3>
+          <p>The lioness stares into your soul with her feminine prowess.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card three">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Sea Lion</h3>
+          <p>The Sea Lion may need to cut his calories with all the blubber.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card four">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Doggos</h3>
+          <p>Doggos should stop eating the grass they might get sick!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card five">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Mountain Guy</h3>
+          <p>Very unsure on the name of this animal so I will call him Mountain Guy.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card six">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Grizzly</h3>
+          <p>You really do not want to mess with this Grizzly!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card seven">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Black Lab</h3>
+          <p>The puppy dog eyes that breaks the hearts of each and every one of us.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card eight">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Ocean Birds</h3>
+          <p>Gotta rest them wings on a breezy ocean day!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card nine">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Flying Birds</h3>
+          <p>Birds flying in a V. Nature is amazing!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card ten">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Hawk</h3>
+          <p>The power of this hawk closing down on his prey could make the best of us gasp!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card eleven">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Seagul</h3>
+          <p>Seagul searching for his next family to bother on the beach!</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+      <div class="card twelve">
+        <div class="thumb"></div><hr>
+        <div class="card-content">
+          <h3>Cheetah</h3>
+          <p>The fastest animal in the world needs to take a breather sometimes.</p>
+          <button class="more">View</button>
+        </div><!--end .content-->
+      </div><!--end .card-->
+    </article>
+    <footer>
+      <p>&copy; 2019, Eric York</p>
+    </footer>
+    <script src="js/page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,275 @@
+:root {
+  font-size: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body, section, div, article, aside, h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+article{
+  padding-top: 15px;
+}
+/*-- Document Styles --*/
+footer {
+  background-color: #333;
+  color: #ddd;
+  padding: 1em;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  color: #DDD;
+  padding: 1em;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  nav {flex-direction: row;}
+}
+nav a {
+  color: #DDD;
+  text-decoration: none;
+}
+.trigram {
+  font-size: 1.75em;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .topnav a {display: none;}
+  .topnav a.trigram {display: inherit; align-self: flex-end;}
+}
+@media screen and (max-width: 767px) {
+  .topnav.responsive {align-items: center;}
+  .topnav.responsive a {display:inherit;}
+  .topnav.responsive a.trigram {visibility: hidden; position: absolute; right: 3%; top: 2%;}
+  .topnav.responsive a.trigram::after {content:'\000D7'; visibility:visible; text-indent: -.5em;}
+}
+
+
+.thumb {
+  background-position: center center;
+  background-size: cover;
+  padding-bottom: 56%;
+}
+.grid-container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 550px) {
+  .grid-container {grid-template-columns: repeat(2, 1fr);}
+}
+@media screen and (min-width: 768px) {
+  .grid-container {grid-template-columns: repeat(3, 1fr);}
+}
+@media screen and (min-width: 990px) {
+  .grid-container {grid-template-columns: repeat(4, 1fr);}
+}
+.card {
+  border: 1px solid #333;
+}
+.card-content {
+  padding: 1em;
+}
+.one .thumb {
+  background-image: url(https://picsum.photos/id/1062/1280/480?grayscale);
+}
+.two .thumb {
+  background-image: url(https://picsum.photos/id/1074/1280/480?grayscale);
+}
+.three .thumb{
+  background-image: url(https://picsum.photos/id/1084/1280/480?grayscale)
+}
+.four .thumb{
+  background-image: url(https://picsum.photos/id/169/1280/480?grayscale)
+}
+.five .thumb{
+  background-image: url(https://picsum.photos/id/200/1280/480?grayscale)
+}
+.six .thumb{
+  background-image: url(https://picsum.photos/id/433/1280/480?grayscale)
+}
+.seven .thumb{
+  background-image: url(https://picsum.photos/id/237/1280/480?grayscale)
+}
+.eight .thumb{
+  background-image: url(https://picsum.photos/id/244/1280/480?grayscale)
+}
+.nine .thumb{
+  background-image: url(https://picsum.photos/id/258/1280/480?grayscale)
+}
+.ten .thumb{
+  background-image: url(https://picsum.photos/id/1024/1280/480?grayscale)
+}
+.eleven .thumb{
+  background-image: url(https://picsum.photos/id/130/1280/480?grayscale)
+}
+.twelve .thumb{
+  background-image: url(https://picsum.photos/id/219/1280/480?grayscale)
+}
+}
+.slideshow {
+  width: 100%;
+}
+.slideshow img{
+  width: 100%;
+}
+.slideshow-wrap{
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+}
+.prev, .next{
+  position: absolute;
+  top: 50%;
+  width: auto;
+  color: #DDD;
+}
+.next{
+  right: 0;
+
+}
+.prev:hover, .next:hover{
+  background: rgba(0, 0, 0, 0.5);
+}
+.dot-wrap{
+  text-align: center;
+
+}
+.dot img {
+  width: 100%;
+}
+
+.dot{
+  width: 20%;
+  background: #BBB;
+  display: inline-block;
+}
+.dot, .active{
+  background: #333;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container{
+	width:100%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height:25%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.more {
+
+
+}
+.card {
+  border-radius: 4px;  /*-- rounds borders --*/
+  padding: .5em; /*-- adds space inside --*/
+  background-color: var(--bg);
+.button {
+  border-radius: 20px
+}
+a.nav-item:hover {
+  color: var(--accent);
+  cursor: pointer; /*-- changes menu items to pointer on hover --*/
+}
+.nav-item.trigram {
+  display: none; /*-- hides trigram (hamburger menu button) by default --*/
+  text-decoration: none; /*-- removes underline --*/
+  font-size: 2rem; /*-- makes much larger than normal text--*/
+
+}
+body{
+  background-color: gray;
+}
+
+.thumb{
+  padding-top: 20px
+
+}
+.card-content {
+  padding: 0 .5em .7em .5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a.nav-item {
+  position: relative; /*-- overcomes negative margin in above rule --*/
+  top: 4px; /*-- tweaks vertical position --*/
+  text-align: center; /*-- center-aligns all text inside their boxes --*/
+  padding: .75em; /*-- provides padding inside menu items --*/
+  margin: auto 0; /*-- centers menu text vertically --*/
